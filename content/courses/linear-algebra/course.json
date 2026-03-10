@@ -1,0 +1,79 @@
+{
+  "id": "linear-algebra",
+  "title": "Linear Algebra: Seeing the Invisible",
+  "description": "Visualize the hidden geometry of linear algebra. From vectors and matrices to eigenvalues and PCA, see how linear transformations reshape space and why it matters.",
+  "chapters": [
+    {
+      "id": "01-vectors",
+      "title": "Vectors & Spaces",
+      "lessons": [
+        "linalg-vectors-intro",
+        "linalg-vector-operations",
+        "linalg-span-and-basis"
+      ]
+    },
+    {
+      "id": "02-matrix-ops",
+      "title": "Matrix Operations",
+      "lessons": [
+        "linalg-matrix-basics",
+        "linalg-matrix-multiply",
+        "linalg-matrix-inverse"
+      ]
+    },
+    {
+      "id": "03-matrix-transforms",
+      "title": "Matrix Transformations",
+      "lessons": [
+        "linalg-matrix-transform",
+        "linalg-rotation-reflection",
+        "linalg-composition"
+      ]
+    },
+    {
+      "id": "04-eigenvalues",
+      "title": "Eigenvalues & Eigenvectors",
+      "lessons": [
+        "linalg-eigenvalues",
+        "linalg-diagonalization",
+        "linalg-spectral-theorem"
+      ]
+    },
+    {
+      "id": "05-systems",
+      "title": "Systems of Linear Equations",
+      "lessons": [
+        "linalg-systems-intro",
+        "linalg-gaussian-elimination",
+        "linalg-row-echelon"
+      ]
+    },
+    {
+      "id": "06-determinants",
+      "title": "Determinants",
+      "lessons": [
+        "linalg-determinant-intro",
+        "linalg-determinant-properties",
+        "linalg-cramers-rule"
+      ]
+    },
+    {
+      "id": "07-change-of-basis",
+      "title": "Change of Basis",
+      "lessons": [
+        "linalg-coordinates",
+        "linalg-change-of-basis",
+        "linalg-similar-matrices"
+      ]
+    },
+    {
+      "id": "08-applications",
+      "title": "Applications",
+      "lessons": [
+        "linalg-pca",
+        "linalg-pagerank",
+        "linalg-least-squares"
+      ]
+    }
+  ]
+}

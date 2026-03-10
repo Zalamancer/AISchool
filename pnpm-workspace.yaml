@@ -1,0 +1,6 @@
+packages:
+  - "packages/*"
+  - "content"
+allowBuilds:
+  '[': true
+  ']': true

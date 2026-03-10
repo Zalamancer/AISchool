@@ -1,0 +1,120 @@
+{
+  "id": "linalg-matrix-transform",
+  "title": "What Matrices Do to Space",
+  "course": "linear-algebra",
+  "chapter": 3,
+  "lesson": 1,
+  "duration_seconds": 78,
+  "scene": "linalg/matrixTransform",
+  "chapters": [
+    {
+      "id": "grid-appears",
+      "title": "The Coordinate Grid",
+      "start_seconds": 0,
+      "short_form_eligible": false,
+      "concepts": ["coordinate-system", "cartesian-plane"]
+    },
+    {
+      "id": "unit-circle",
+      "title": "Drawing the Unit Circle",
+      "start_seconds": 3,
+      "short_form_eligible": true,
+      "concepts": ["unit-circle", "distance-from-origin"]
+    },
+    {
+      "id": "equations-arrive",
+      "title": "Meet Matrix A",
+      "start_seconds": 8,
+      "short_form_eligible": true,
+      "concepts": ["matrix-notation", "eigenvalue-equation"]
+    },
+    {
+      "id": "transformation",
+      "title": "The Transformation",
+      "start_seconds": 18,
+      "short_form_eligible": true,
+      "concepts": ["linear-transformation", "circle-to-ellipse", "matrix-multiplication"]
+    },
+    {
+      "id": "eigenvectors-emerge",
+      "title": "Eigenvectors Emerge",
+      "start_seconds": 38,
+      "short_form_eligible": true,
+      "concepts": ["eigenvector", "eigenvalue", "invariant-direction"]
+    },
+    {
+      "id": "eigenvectors-scale",
+      "title": "Eigenvectors Only Scale",
+      "start_seconds": 55,
+      "short_form_eligible": true,
+      "concepts": ["scaling", "eigenvector-behavior", "replay-transform"]
+    },
+    {
+      "id": "resolve",
+      "title": "The Big Picture",
+      "start_seconds": 70,
+      "short_form_eligible": false,
+      "concepts": ["eigenvalue-summary", "geometric-intuition"]
+    }
+  ],
+  "narration": [
+    {
+      "start": 0,
+      "text": "Let's build a coordinate grid — the stage where linear algebra plays out."
+    },
+    {
+      "start": 3,
+      "text": "Now the unit circle. Every point on this circle is exactly one unit from the origin."
+    },
+    {
+      "start": 8,
+      "text": "Here is our matrix A — a two-by-two grid of numbers. It encodes a transformation."
+    },
+    {
+      "start": 12,
+      "text": "The equation A v equals lambda v is the eigenvalue equation. It asks: which vectors only get scaled?"
+    },
+    {
+      "start": 18,
+      "text": "Watch what happens when we multiply every point by A. The circle warps into an ellipse."
+    },
+    {
+      "start": 25,
+      "text": "The grid lines stay parallel and evenly spaced — that's what makes this a linear transformation."
+    },
+    {
+      "start": 32,
+      "text": "But look — some directions got stretched more than others."
+    },
+    {
+      "start": 38,
+      "text": "These special directions are the eigenvectors. They didn't rotate — they only scaled."
+    },
+    {
+      "start": 44,
+      "text": "The first eigenvector scaled by about 2.46 — that's its eigenvalue, lambda one."
+    },
+    {
+      "start": 50,
+      "text": "The second eigenvector scaled by about 1.04 — eigenvalue lambda two."
+    },
+    {
+      "start": 55,
+      "text": "Let's rewind and watch again. Focus on the eigenvector — it stays on its line."
+    },
+    {
+      "start": 63,
+      "text": "Now follow the second eigenvector. Same thing — it only stretches, never rotates."
+    },
+    {
+      "start": 70,
+      "text": "That's what eigenvalues and eigenvectors really are — the DNA of a matrix transformation."
+    },
+    {
+      "start": 75,
+      "text": "Every matrix has a story. Eigenvectors tell you the directions. Eigenvalues tell you how much."
+    }
+  ],
+  "prerequisites": ["linalg-vectors-intro", "linalg-matrix-basics"],
+  "next": "linalg-eigenvalues"
+}

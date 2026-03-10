@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(pnpm --version)",
+      "Bash(node --version)",
+      "Bash(npm --version)",
+      "Bash(npm install -g pnpm)",
+      "Bash(gh auth status)",
+      "Bash(git config --global user.name)",
+      "Bash(git config --global user.email)",
+      "Bash(where gh)",
+      "Bash(cmd.exe /c \"where gh\")"
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "id": "calculus-1",
+  "title": "Calculus: The Language of Change",
+  "description": "Watch calculus come alive through animation. From the intuition behind limits to the power of integration, see why calculus is the mathematical language of motion, growth, and change.",
+  "chapters": [
+    {
+      "id": "01-limits",
+      "title": "Limits & Continuity",
+      "lessons": [
+        "calc1-limits-intro",
+        "calc1-limit-laws",
+        "calc1-continuity"
+      ]
+    },
+    {
+      "id": "02-derivatives",
+      "title": "The Derivative",
+      "lessons": [
+        "calc1-derivative-intro",
+        "calc1-tangent-line",
+        "calc1-derivative-as-function"
+      ]
+    },
+    {
+      "id": "03-derivative-rules",
+      "title": "Derivative Rules",
+      "lessons": [
+        "calc1-power-rule",
+        "calc1-product-quotient",
+        "calc1-chain-rule"
+      ]
+    },
+    {
+      "id": "04-derivative-apps",
+      "title": "Applications of Derivatives",
+      "lessons": [
+        "calc1-related-rates",
+        "calc1-optimization",
+        "calc1-curve-sketching"
+      ]
+    },
+    {
+      "id": "05-integrals",
+      "title": "The Integral",
+      "lessons": [
+        "calc1-area-problem",
+        "calc1-riemann-sums",
+        "calc1-definite-integral"
+      ]
+    },
+    {
+      "id": "06-ftc",
+      "title": "The Fundamental Theorem of Calculus",
+      "lessons": [
+        "calc1-ftc-part1",
+        "calc1-ftc-part2",
+        "calc1-antiderivatives"
+      ]
+    },
+    {
+      "id": "07-integration-techniques",
+      "title": "Integration Techniques",
+      "lessons": [
+        "calc1-substitution",
+        "calc1-integration-by-parts",
+        "calc1-partial-fractions"
+      ]
+    },
+    {
+      "id": "08-integration-apps",
+      "title": "Applications of Integration",
+      "lessons": [
+        "calc1-area-between-curves",
+        "calc1-volumes",
+        "calc1-arc-length"
+      ]
+    }
+  ]
+}

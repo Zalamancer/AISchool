@@ -1,0 +1,117 @@
+{
+  "id": "linalg-eigenvalues",
+  "title": "What Eigenvalues Really Mean",
+  "course": "linear-algebra",
+  "chapter": 4,
+  "lesson": 1,
+  "duration_seconds": 90,
+  "scene": "linalg/eigenvalues",
+  "chapters": [
+    {
+      "id": "diagonal-setup",
+      "title": "A Diagonal Matrix",
+      "start_seconds": 0,
+      "short_form_eligible": true,
+      "concepts": ["diagonal-matrix", "unit-circle", "axis-aligned-eigenvectors"]
+    },
+    {
+      "id": "diagonal-transform",
+      "title": "Diagonal Eigenvectors Are Obvious",
+      "start_seconds": 5,
+      "short_form_eligible": true,
+      "concepts": ["diagonal-eigenvalues", "axis-aligned-scaling"]
+    },
+    {
+      "id": "triangular",
+      "title": "An Upper Triangular Matrix",
+      "start_seconds": 15,
+      "short_form_eligible": true,
+      "concepts": ["upper-triangular-matrix", "shear", "non-axis-eigenvectors"]
+    },
+    {
+      "id": "rotation",
+      "title": "A Rotation Matrix",
+      "start_seconds": 30,
+      "short_form_eligible": true,
+      "concepts": ["rotation-matrix", "complex-eigenvalues", "no-real-eigenvectors"]
+    },
+    {
+      "id": "comparison",
+      "title": "Three Matrices Side by Side",
+      "start_seconds": 50,
+      "short_form_eligible": true,
+      "concepts": ["matrix-comparison", "eigenvalue-intuition", "geometric-meaning"]
+    },
+    {
+      "id": "characteristic-equation",
+      "title": "The Characteristic Equation",
+      "start_seconds": 70,
+      "short_form_eligible": true,
+      "concepts": ["characteristic-equation", "determinant", "det-A-minus-lambda-I"]
+    }
+  ],
+  "narration": [
+    {
+      "start": 0,
+      "text": "Let's start with the simplest case — a diagonal matrix. Grid and circle, ready to transform."
+    },
+    {
+      "start": 5,
+      "text": "For a diagonal matrix, the eigenvectors point along the axes. The eigenvalues are right there on the diagonal."
+    },
+    {
+      "start": 10,
+      "text": "Lambda one is 2, lambda two is 3. The circle stretches into an axis-aligned ellipse."
+    },
+    {
+      "start": 15,
+      "text": "Now a harder case — an upper triangular matrix. The eigenvalues are still on the diagonal, but the eigenvectors tilt."
+    },
+    {
+      "start": 22,
+      "text": "Watch the eigenvectors — they stay on their own lines during the transformation. That's the defining property."
+    },
+    {
+      "start": 30,
+      "text": "What about a rotation matrix? Let's apply a ninety-degree rotation."
+    },
+    {
+      "start": 35,
+      "text": "Every vector changes direction. No vector stays on its own line."
+    },
+    {
+      "start": 40,
+      "text": "That means no real eigenvalues. The eigenvalues are plus and minus i — complex numbers."
+    },
+    {
+      "start": 46,
+      "text": "Complex eigenvalues signal pure rotation. The magnitude tells you the angle."
+    },
+    {
+      "start": 50,
+      "text": "Let's see all three side by side. Diagonal, triangular, rotation — transforming simultaneously."
+    },
+    {
+      "start": 57,
+      "text": "Eigenvalues tell you how much. Eigenvectors tell you which direction. Together, they decode the matrix."
+    },
+    {
+      "start": 64,
+      "text": "No real eigenvectors? The transformation is fundamentally rotational."
+    },
+    {
+      "start": 70,
+      "text": "Where do eigenvalues come from? The characteristic equation: determinant of A minus lambda I equals zero."
+    },
+    {
+      "start": 78,
+      "text": "This single equation unlocks every eigenvalue of every matrix. It's the master key."
+    },
+    {
+      "start": 85,
+      "text": "From geometry to algebra and back — that's the power of eigenvalues."
+    }
+  ],
+  "prerequisites": ["linalg-matrix-transform"],
+  "next": "linalg-diagonalization"
+}

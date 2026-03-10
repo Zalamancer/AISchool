@@ -1,0 +1,136 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://aischool.dev/schemas/lesson.json",
+  "title": "AISchool Lesson",
+  "description": "Schema for AISchool lesson definition files. Each lesson maps to a Motion Canvas scene with timed chapters and narration.",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "course",
+    "chapter",
+    "lesson",
+    "duration_seconds",
+    "scene",
+    "chapters",
+    "narration"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]+$",
+      "description": "Unique lesson identifier, e.g. 'linalg-matrix-transform'"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Human-readable lesson title"
+    },
+    "course": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]+$",
+      "description": "Course identifier this lesson belongs to"
+    },
+    "chapter": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "1-based chapter number within the course"
+    },
+    "lesson": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "1-based lesson number within the chapter"
+    },
+    "duration_seconds": {
+      "type": "number",
+      "minimum": 1,
+      "description": "Total duration of the scene in seconds"
+    },
+    "scene": {
+      "type": "string",
+      "description": "Path to the Motion Canvas scene, e.g. 'linalg/matrixTransform'"
+    },
+    "chapters": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Timed chapter markers (beats) within the lesson",
+      "items": {
+        "$ref": "#/definitions/chapter"
+      }
+    },
+    "narration": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Timed narration cues for TTS or subtitle display",
+      "items": {
+        "$ref": "#/definitions/narrationCue"
+      }
+    },
+    "prerequisites": {
+      "type": "array",
+      "description": "Lesson IDs that should be completed before this one",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9-]+$"
+      }
+    },
+    "next": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]+$",
+      "description": "Lesson ID of the next lesson in sequence"
+    }
+  },
+  "additionalProperties": false,
+  "definitions": {
+    "chapter": {
+      "type": "object",
+      "required": ["id", "title", "start_seconds", "short_form_eligible", "concepts"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$",
+          "description": "Unique chapter identifier within this lesson"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Human-readable chapter title"
+        },
+        "start_seconds": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Start time of this chapter in seconds from the beginning"
+        },
+        "short_form_eligible": {
+          "type": "boolean",
+          "description": "Whether this chapter can be extracted as a standalone short-form clip"
+        },
+        "concepts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Mathematical concepts introduced or reinforced in this chapter"
+        }
+      },
+      "additionalProperties": false
+    },
+    "narrationCue": {
+      "type": "object",
+      "required": ["start", "text"],
+      "properties": {
+        "start": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Start time in seconds for this narration cue"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Narration text for TTS or subtitles"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

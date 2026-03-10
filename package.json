@@ -1,0 +1,14 @@
+{
+  "name": "mathvision",
+  "private": true,
+  "packageManager": "pnpm@10.31.0",
+  "scripts": {
+    "dev:engine": "pnpm --filter @mathvision/engine dev",
+    "dev:player": "pnpm --filter @mathvision/player dev",
+    "build": "pnpm -r build",
+    "export": "pnpm --filter @mathvision/pipeline export"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild", "sharp"]
+  }
+}

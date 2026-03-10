@@ -1,0 +1,117 @@
+{
+  "id": "calc1-limits-intro",
+  "title": "What Does a Limit Really Mean?",
+  "course": "calculus-1",
+  "chapter": 1,
+  "lesson": 1,
+  "duration_seconds": 90,
+  "scene": "calculus/limits",
+  "chapters": [
+    {
+      "id": "axes",
+      "title": "Setting the Stage",
+      "start_seconds": 0,
+      "short_form_eligible": false,
+      "concepts": ["coordinate-axes", "function-graph"]
+    },
+    {
+      "id": "plot-curve",
+      "title": "A Function with a Hole",
+      "start_seconds": 5,
+      "short_form_eligible": true,
+      "concepts": ["rational-function", "removable-discontinuity", "hole-in-graph"]
+    },
+    {
+      "id": "approach-left",
+      "title": "Approaching from the Left",
+      "start_seconds": 20,
+      "short_form_eligible": true,
+      "concepts": ["left-hand-limit", "convergence", "approaching-value"]
+    },
+    {
+      "id": "approach-right",
+      "title": "Approaching from the Right",
+      "start_seconds": 40,
+      "short_form_eligible": true,
+      "concepts": ["right-hand-limit", "two-sided-limit"]
+    },
+    {
+      "id": "limit-equation",
+      "title": "The Limit Exists",
+      "start_seconds": 55,
+      "short_form_eligible": true,
+      "concepts": ["limit-notation", "limit-vs-function-value", "undefined-vs-limit"]
+    },
+    {
+      "id": "epsilon-delta",
+      "title": "Epsilon-Delta Definition",
+      "start_seconds": 75,
+      "short_form_eligible": true,
+      "concepts": ["epsilon-delta", "formal-definition", "neighborhood"]
+    }
+  ],
+  "narration": [
+    {
+      "start": 0,
+      "text": "Let's set up our coordinate axes — the canvas for visualizing functions."
+    },
+    {
+      "start": 5,
+      "text": "Here's a curious function: x squared minus one, divided by x minus one."
+    },
+    {
+      "start": 9,
+      "text": "It simplifies to x plus one — a straight line. But at x equals one, it's zero over zero. Undefined."
+    },
+    {
+      "start": 14,
+      "text": "That open circle is the hole. The function has no value there. But does it have a limit?"
+    },
+    {
+      "start": 20,
+      "text": "Let's approach x equals one from the left. Start at x equals zero point five."
+    },
+    {
+      "start": 25,
+      "text": "As x gets closer — 0.9, 0.99, 0.999 — watch f of x creep toward 2."
+    },
+    {
+      "start": 33,
+      "text": "From the left, the function values converge to 2. But that's only half the story."
+    },
+    {
+      "start": 40,
+      "text": "Now from the right. Start at x equals 1.5 and approach the hole."
+    },
+    {
+      "start": 46,
+      "text": "1.1, 1.01, 1.001 — again, f of x converges to 2. Both sides agree."
+    },
+    {
+      "start": 55,
+      "text": "The limit of f of x as x approaches one equals two. The function never reaches 2 at x equals one, but it gets arbitrarily close."
+    },
+    {
+      "start": 63,
+      "text": "f of one is undefined — but the limit is 2. The limit describes the trend, not the value."
+    },
+    {
+      "start": 70,
+      "text": "That's the key insight: a limit is about where a function is heading, not where it is."
+    },
+    {
+      "start": 75,
+      "text": "The formal definition: for every epsilon greater than zero, there exists a delta greater than zero."
+    },
+    {
+      "start": 80,
+      "text": "Watch the bands shrink. As epsilon narrows around y equals two, delta narrows around x equals one."
+    },
+    {
+      "start": 86,
+      "text": "No matter how tight the target, we can always find a window. That's what makes the limit precise."
+    }
+  ],
+  "prerequisites": [],
+  "next": "calc1-limit-laws"
+}
